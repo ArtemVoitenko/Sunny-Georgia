@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-
-<script src="script.min.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body class="body">
+		<div class="container">
+			<header class="main-header">
+				<a href="#" class="main-header__logo"><img src="img/logo.png" alt="Soddy Georgia"></a>
+				<nav class="main-header__nav">
+					<ul class="main-header__list">
+						<li class="main-header__item"><a href="#" class="main-header__link">Главная</a></li>
+						<li class="main-header__item"><a href="#" class="main-header__link">Направления</a>
+						<div class="submenu">
+							<div class="submenu__common">
+								<ul class="submenu__list">
+									<li class="submenu__item">море
+										<ul class="submenu__places">
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item">горы
+										<ul class="submenu__places">
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item">города
+										<ul class="submenu__places">
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+										</ul>
+									</li>
+									<li class="submenu__item">места
+										<ul class="submenu__places">
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+											<li class="submenu__inner-item"><a href="" class="submenu__inner-link">interesting</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="main-header__item"><a href="#" class="main-header__link">Страховка</a></li>
+					<li class="main-header__item">Авиа<a href="#" class="main-header__link"></a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="params">
+			<ul class="params__tabs">
+				<li class="params__tab-item"><a href="#" class="params__tab-link">жилье</a></li>
+				<li class="params__tab-item"><a href="#" class="params__tab-link">туры</a></li>
+				<li class="params__tab-item"><a href="#" class="params__tab-link">экскурсии</a></li>
+				<li class="params__tab-item"><a href="#" class="params__tab-link">авто</a></li>
+			</ul>
+			<form action="#" class="params__form">
+				<input type="date" placeholder="sdcsdc">
+				<select name="days number" id="days-number">
+					<option value="">количество дней</option>
+					<option value="1-4">1-4</option>
+					<option value="1-4">4-7</option>
+					<option value="1-4">7+</option>
+				</select>
+				<input type="text" class='rangeVal' id="amountMin" readonly>
+				<span>gel</span>
+				<div class="sliderRange"></div>
+				<input type="text" class='rangeVal' id="amountMax" readonly>
+				<button class="extended-btn">Расширенный поиск</button>
+				<div class="extended">
+					<div class="extended__block">
+						<span class="extended__title">Тип тура</span>
+						<input type="checkbox" name="all" id="all">
+						<label for="all">Все</label>
+						<input type="checkbox" name="beach" id="beach">
+						<label for="beach">пляжный</label>
+						<input type="checkbox" name="skying" id="skying">
+						<label for="skying">горнолыжный</label>
+						<input type="checkbox" name="recreative" id="recreative">
+						<label for="recreative">оздоровительный</label>
+						<input type="checkbox" name="wedding" id="wedding">
+						<label for="wedding">свадебный</label>
+						<input type="checkbox" name="extremal" id="extremal">
+						<label for="extremal">экстремальный</label>
+						<input type="checkbox" name="gastronomic" id="gastronomic">
+						<label for="gastronomic">гастрономический</label>
+						<input type="checkbox" name="excursion" id="excursion">
+						<label for="excursion">экскурсионный</label>
+						<input type="checkbox" name="piligrimage" id="piligrimage">
+						<label for="piligrimage">паломнический</label>
+					</div>
+					<div class="extended__block">
+						<span class="extended__title">Питание</span>
+						<input type="checkbox" name="no-inclusive" id="no-inclusive">
+						<label for="no-inclusive">не включено</label>
+						<input type="checkbox" name="bb" id="bb">
+						<label for="bb"></label>
+						<input type="checkbox" name="hb" id="hb">
+						<label for="hb">завтрак и ужин</label>
+						<input type="checkbox" name="fb" id="fb">
+						<label for="fb">полный пансион</label>
+						<input type="checkbox" name="ai" id="ai">
+						<label for="ai">все включено</label>
+						<input type="checkbox" name="uai" id="uai">
+						<label for="uai">ультра все</label>
+						<button type="submit">подобрать</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		
+	</div>
+	<script src="js/script.min.js" type="text/javascript"></script>
 </body>
 </html>

@@ -13,6 +13,7 @@ var del = require("del");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 
 gulp.task("style", function () {   
 	gulp.src("sass/main.sass")
@@ -43,10 +44,13 @@ gulp.task("sprite", function(){
 	.pipe(gulp.dest("build/img"));
 	});
 gulp.task("minifyJS", function(){
-	gulp.src("js/script.js")
+	gulp.src([
+		"js/jQuery.js",
+		"js/jquery-ui.min.js",		
+		"js/script.js"])
+	.pipe(concat('script.min.js'))
 	.pipe(plumber())
 	.pipe(uglify())
-	.pipe(rename("script.min.js"))
 	.pipe(gulp.dest("build/js"))
 	.pipe(server.reload( {stream: true} ));
 	});
