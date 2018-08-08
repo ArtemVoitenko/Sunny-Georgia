@@ -1,0 +1,81 @@
+.extended-search
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 20px
+	&-btn
+		background-color: transparent
+		border: none
+		color: #fff
+		font-size: 14px
+		padding-left: 20px
+		cursor: pointer
+		margin-bottom: 15px
+		position: relative
+		&::before
+			content: ''
+			width: 10px
+			height: 13px
+			position: absolute
+			top: 20%
+			left: 5px
+			background-image: url(../img/double-arrow.png)
+			background-repeat: no-repeat
+	&__block
+		width: 50%
+		background-color: transparentize($common, 0.25)
+		margin-right: 50px
+		box-sizing: border-box
+		border-radius: 12px
+		font-size: 14px
+		text-transform: uppercase
+		color: #fff
+		&:last-child
+			margin-right: 0
+	&__padding-wrapper
+		display: inline-block
+		padding-left: 30px
+		padding-top: 10px
+		padding-bottom: 10px
+	&__item-wrapper
+		width: 50%
+		float: left
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 30px
+		box-sizing: border-box
+	&__title
+		display: block
+		border-bottom: 1px solid #fff
+		padding-left: 30px
+		padding-top: 20px
+		padding-bottom: 7px
+	&__checkbox
+		position: absolute
+		left: -99999px
+	&__item
+		line-height: 25px
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			width: 18px
+			height: 18px
+			border: 1px solid $accent
+			position: absolute
+			left: -30px
+			top: -1px
+.extended-search__checkbox:checked
+	+ label
+		&::before
+			background-color: $accent
+		&::after
+			content: ''
+			height: 7px
+			width: 12px
+			border-left: 1px solid transparentize($common, 0.25)
+			border-bottom: 1px solid transparentize($common, 0.25)
+			position: absolute
+			left: -26px
+			top: 2px
+			transform: rotate(-45deg)
