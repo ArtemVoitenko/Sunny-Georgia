@@ -9,6 +9,8 @@
 	background-size: cover
 	background-repeat: no-repeat
 	font-family: $default-font
+	min-height: 100vh
+	padding-bottom: 30px
 .common-button
 	display: block
 	background-color: $accent
@@ -22,11 +24,19 @@
 	border: none
 	margin: 0 auto
 .hidden
-	display: none!important
+	display: none
+.visiable
+	display: block
+.active
+	background-color: $accent
+	color: #000
+	cursor: pointer
+	svg
+		fill: #000
 .reversed-background
 	&::before
 		transform: rotate(180deg)
-		top: 0!important
+		top: 0
 
 
 	

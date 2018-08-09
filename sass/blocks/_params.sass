@@ -79,7 +79,17 @@
 	&:focus-within
 		&::after
 			transform: rotate(45deg)
+.params__tab-content
+	display: none
 
+@media(max-width: 768px)
+	.params__main-options
+		flex-direction: column
+	.params__option-wrapper
+		height: 55px
+		margin-bottom: 10px
+	.params__icon
+		display: none
 
 
 

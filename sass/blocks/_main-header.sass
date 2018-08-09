@@ -1,0 +1,21 @@
+.main-header
+	background-color: rgba(24, 26, 27, 0.75)
+	margin-bottom: 160px
+	position: relative
+.header-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-height: 80px
+.show-main-nav
+	background-color: transparent
+	border: none
+	fill: $accent
+	cursor: pointer
+	display: none
+@media(max-width: 768px)
+	.main-header
+		margin-bottom: 0
+	.show-main-nav
+		display: block
+

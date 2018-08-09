@@ -3,6 +3,7 @@
 	justify-content: space-between
 	align-items: flex-start
 	margin-bottom: 20px
+	// margin-top: 15px	
 	&-btn
 		background-color: transparent
 		border: none
@@ -10,6 +11,7 @@
 		font-size: 14px
 		padding-left: 20px
 		cursor: pointer
+		display: block
 		margin-bottom: 15px
 		position: relative
 		&::before
@@ -65,6 +67,9 @@
 			position: absolute
 			left: -30px
 			top: -1px
+	&__feeding-abbr
+		font-weight: 700
+		color: $accent
 .extended-search__checkbox:checked
 	+ label
 		&::before
@@ -79,3 +84,18 @@
 			left: -26px
 			top: 2px
 			transform: rotate(-45deg)
+@media (max-width: 960px)
+	.extended-search
+		flex-direction: column
+		&__block
+			width: 100%
+			margin-bottom: 20px
+		&__item-wrapper
+			width: 32%
+
+@media (max-width: 768px)
+	.extended-search
+		&__block
+			margin-right: 0
+		&__item-wrapper
+			width: 100%
