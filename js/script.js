@@ -29,15 +29,15 @@ $(function() {
     directionsMenu.hover(function() {
         submenu.toggleClass("hidden");
     });
-    showNavBtn.on("click", function(){
+    showNavBtn.on("click", function() {
         mainNav.toggleClass("visiable");
     });
     $(function() {
- 
-  $('.params__tab-item').on('click', function() {
-    $(this)
-      .addClass('active').siblings().removeClass('active')
-      .closest(".params").find('.params__tab-content').removeClass('visiable').eq($(this).index()).addClass('visiable');
-  });
-});
+
+        $('.params__tab-item').on('click', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest(".params").find('.params__tab-content').removeClass('visiable').eq($(this).index()).addClass('visiable');
+        });
+    });
 });

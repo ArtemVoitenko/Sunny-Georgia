@@ -99,105 +99,104 @@
 							</ul>
 							<div class="params__tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, impedit ut debitis natus in quaerat iure, ratione asperiores eveniet explicabo culpa maxime deserunt dolore veniam quibusdam molestiae dicta voluptatum! Aspernatur nisi, ducimus eligendi id repellendus quis nesciunt animi quisquam aliquam fugit suscipit dolor maiores assumenda repudiandae quos iste reiciendis possimus vitae non iure expedita! Vero suscipit, quia ipsam accusantium fugit enim autem, at architecto culpa illum non esse aliquid sint hic eum soluta rerum minima. Fuga provident magnam mollitia. Quidem incidunt modi delectus consectetur inventore omnis nihil maiores harum, mollitia non enim, sint soluta perspiciatis obcaecati eos temporibus velit.</div>
 							<div class="params__tab-content visiable">
-							<form action="#" class="params__form">
-								<div class="params__main-options ">
-									<div class="params__option-wrapper arrow-show">
-										<input class="datepicker params__option arrow-show" type="text" placeholder="интервал дат начала тура">
+								<form action="#" class="params__form">
+									<div class="params__main-options ">
+										<div class="params__option-wrapper arrow-show">
+											<input class="datepicker params__option arrow-show" type="text" placeholder="интервал дат начала тура">
+										</div>
+										<div class="params__option-wrapper arrow-show">
+											<select name="days number" class="params__option " id="days-number">
+												<option value="">количество дней</option>
+												<option value="1-4">1-4</option>
+												<option value="1-4">4-7</option>
+												<option value="1-4">7+</option>
+											</select>
+										</div>
+										<div class="option-slider params__option-wrapper params__option ">
+											<span>gel</span>
+											<input type="text" class='rangeVal' id="amountMin" readonly>
+											<div class="sliderRange"> </div>
+											<input type="text" class='rangeVal' id="amountMax" readonly>
+										</div>
 									</div>
-									<div class="params__option-wrapper arrow-show">
-										<select name="days number" class="params__option " id="days-number">
-											<option value="">количество дней</option>
-											<option value="1-4">1-4</option>
-											<option value="1-4">4-7</option>
-											<option value="1-4">7+</option>
-										</select>
+									<span class="extended-search-btn">Расширенный поиск</span>
+									<div class="extended-search hidden">
+										<div class="extended-search__block">
+											<span class="extended-search__title">Тип тура</span>
+											<div class="extended-search__padding-wrapper">
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="all" id="all">
+													<label class="extended-search__item" for="all">Все</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="beach" id="beach">
+													<label class="extended-search__item" for="beach">пляжный</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="skying" id="skying">
+													<label class="extended-search__item" for="skying">горнолыжный</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="recreative" id="recreative">
+													<label class="extended-search__item" for="recreative">оздоровительный</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="wedding" id="wedding">
+													<label class="extended-search__item" for="wedding">свадебный</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="extremal" id="extremal">
+													<label class="extended-search__item" for="extremal">экстремальный</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="gastronomic" id="gastronomic">
+													<label class="extended-search__item" for="gastronomic">гастрономический</label>
+												</div>
+												<div class="extended-search__item-wrapper">
+													<input type="checkbox" class='extended-search__checkbox' name="excursion" id="excursion">
+													<label class="extended-search__item" for="excursion">экскурсионный</label>
+												</div>
+												<div class="extended-search__item-wrapper"><input type="checkbox" class='extended-search__checkbox' name="piligrimage" id="piligrimage">
+												<label class="extended-search__item" for="piligrimage">паломнический</label>
+											</div>
+										</div>
 									</div>
-									<div class="option-slider params__option-wrapper params__option ">
-										<span>gel</span>
-										<input type="text" class='rangeVal' id="amountMin" readonly>
-										<div class="sliderRange"> </div>
-										<input type="text" class='rangeVal' id="amountMax" readonly>
-									</div>
-								</div>
-								<span class="extended-search-btn">Расширенный поиск</span>
-								<div class="extended-search hidden">
 									<div class="extended-search__block">
-										<span class="extended-search__title">Тип тура</span>
+										<span class="extended-search__title">Питание</span>
 										<div class="extended-search__padding-wrapper">
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="all" id="all">
-												<label class="extended-search__item" for="all">Все</label>
+												<input type="checkbox" class='extended-search__checkbox' name="no-inclusive" id="no-inclusive">
+												<label class="extended-search__item" for="no-inclusive">не включено</label>
 											</div>
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="beach" id="beach">
-												<label class="extended-search__item" for="beach">пляжный</label>
+												<input type="checkbox" class='extended-search__checkbox' name="fb" id="fb">
+												<label class="extended-search__item" for="fb"><span class="extended-search__feeding-abbr">fb</span> - полный пансион</label>
 											</div>
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="skying" id="skying">
-												<label class="extended-search__item" for="skying">горнолыжный</label>
+												<input type="checkbox" class='extended-search__checkbox' name="bb" id="bb">
+												<label class="extended-search__item" for="bb"><span class="extended-search__feeding-abbr">bb</span> - Только завтрак</label>
 											</div>
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="recreative" id="recreative">
-												<label class="extended-search__item" for="recreative">оздоровительный</label>
+												<input type="checkbox" class='extended-search__checkbox' name="ai" id="ai">
+												<label class="extended-search__item" for="ai"><span class="extended-search__feeding-abbr">ai</span> - все включено</label>
 											</div>
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="wedding" id="wedding">
-												<label class="extended-search__item" for="wedding">свадебный</label>
+												<input type="checkbox" class='extended-search__checkbox' name="hb" id="hb">
+												<label class="extended-search__item" for="hb"><span class="extended-search__feeding-abbr">hb</span> - завтрак и ужин</label>
 											</div>
 											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="extremal" id="extremal">
-												<label class="extended-search__item" for="extremal">экстремальный</label>
+												<input type="checkbox" class='extended-search__checkbox' name="uai" id="uai">
+												<label class="extended-search__item" for="uai"><span class="extended-search__feeding-abbr">uai</span -> ультра все</label>
 											</div>
-											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="gastronomic" id="gastronomic">
-												<label class="extended-search__item" for="gastronomic">гастрономический</label>
-											</div>
-											<div class="extended-search__item-wrapper">
-												<input type="checkbox" class='extended-search__checkbox' name="excursion" id="excursion">
-												<label class="extended-search__item" for="excursion">экскурсионный</label>
-											</div>
-											<div class="extended-search__item-wrapper"><input type="checkbox" class='extended-search__checkbox' name="piligrimage" id="piligrimage">
-											<label class="extended-search__item" for="piligrimage">паломнический</label>
 										</div>
 									</div>
 								</div>
-								<div class="extended-search__block">
-									<span class="extended-search__title">Питание</span>
-									<div class="extended-search__padding-wrapper">
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="no-inclusive" id="no-inclusive">
-											<label class="extended-search__item" for="no-inclusive">не включено</label>
-										</div>
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="fb" id="fb">
-											<label class="extended-search__item" for="fb"><span class="extended-search__feeding-abbr">fb</span> - полный пансион</label>
-										</div>
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="bb" id="bb">
-											<label class="extended-search__item" for="bb"><span class="extended-search__feeding-abbr">bb</span> - Только завтрак</label>
-										</div>
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="ai" id="ai">
-											<label class="extended-search__item" for="ai"><span class="extended-search__feeding-abbr">ai</span> - все включено</label>
-										</div>
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="hb" id="hb">
-											<label class="extended-search__item" for="hb"><span class="extended-search__feeding-abbr">hb</span> - завтрак и ужин</label>
-										</div>
-										<div class="extended-search__item-wrapper">
-											<input type="checkbox" class='extended-search__checkbox' name="uai" id="uai">
-											<label class="extended-search__item" for="uai"><span class="extended-search__feeding-abbr">uai</span -> ультра все</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<button class="common-button" type="submit">подобрать</button>
-						</form>
-							</div>
-
-							<div class="params__tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at accusamus labore distinctio mollitia voluptates beatae aspernatur magnam quisquam aut perferendis velit sit ad nemo eos quidem fuga et voluptate placeat, ullam suscipit inventore? Voluptatum tempora quam ex, nostrum illum natus ipsum atque, laudantium aliquid temporibus, veritatis fugit similique minus.</div>
-							<div class="params__tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt odit, totam ipsum ut, quasi aspernatur facere amet inventore enim quibusdam sunt nemo iste? Corporis consectetur, animi autem vero quo atque. Doloremque esse exercitationem, nemo magnam quo quos quisquam eos iste, voluptatem deleniti optio! Officiis mollitia iure non, atque explicabo, temporibus ratione vel, sunt itaque ad iusto dolorem veniam culpa officia commodi dolore deserunt totam quo. Doloremque, accusantium voluptatem in.</div>
-					
+								<button class="common-button" type="submit">подобрать</button>
+							</form>
+						</div>
+						<div class="params__tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at accusamus labore distinctio mollitia voluptates beatae aspernatur magnam quisquam aut perferendis velit sit ad nemo eos quidem fuga et voluptate placeat, ullam suscipit inventore? Voluptatum tempora quam ex, nostrum illum natus ipsum atque, laudantium aliquid temporibus, veritatis fugit similique minus.</div>
+						<div class="params__tab-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero incidunt odit, totam ipsum ut, quasi aspernatur facere amet inventore enim quibusdam sunt nemo iste? Corporis consectetur, animi autem vero quo atque. Doloremque esse exercitationem, nemo magnam quo quos quisquam eos iste, voluptatem deleniti optio! Officiis mollitia iure non, atque explicabo, temporibus ratione vel, sunt itaque ad iusto dolorem veniam culpa officia commodi dolore deserunt totam quo. Doloremque, accusantium voluptatem in.</div>
+						
 					</section>
 				</div>
 				<script src="js/script.min.js" type="text/javascript"></script>
